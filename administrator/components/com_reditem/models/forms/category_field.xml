@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="field-information">
+        <field  name="id"
+                type="hidden"
+                default="0"
+                class="readonly"
+                readonly="true"/>
+        <field  name="name"
+                type="text"
+                default=""
+                label="COM_REDITEM_FIELD_NAME"
+                required="true"
+                class="input-xlarge"
+                description="COM_REDITEM_FIELD_NAME_DESCRIPTION"
+                message="COM_REDITEM_FIELD_NAME_DESCRIPTION"/>
+        <field name="fieldcode" type="hidden" readonly="true"/>
+        <field name="type"
+                type="rifieldtypes"
+                class="chosen input-xlarge"
+                label="COM_REDITEM_FIELD_FIELDTYPE"
+                description="COM_REDITEM_FIELD_FIELDTYPE_DESCRIPTION"
+                required="true"
+                onchange="submitform('category_field.setFieldType');"
+                default="">
+            <option value="">COM_REDITEM_FIELD_SELECT_TYPE</option>
+        </field>
+        <field name="categories"
+               type="ricategoriestree"
+               label="COM_REDITEM_CATEGORY_FIELDS_CATEGORIES_LBL"
+               description="COM_REDITEM_CATEGORY_FIELDS_CATEGORIES_DESC"
+               multiple="true"/>
+        <field name="options"
+               type="ridynamic"
+               label="COM_REDITEM_FIELD_OPTIONS"
+               section="checkbox,radio,select"
+               description="COM_REDITEM_FIELD_OPTIONS_DESCRIPTION"/>
+        <field name="state" type="radio"
+               label="JPUBLISHED"
+               class="btn-group"
+               default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+    </fieldset>
+    <fields name="params">
+        <field name="group"
+               type="text"
+               default=""
+               label="COM_REDITEM_FIELD_GROUP"
+               class="input-xlarge"
+               description="COM_REDITEM_FIELD_GROUP_DESCRIPTION"/>
+    </fields>
+</form>

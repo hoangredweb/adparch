@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_REDITEM</name>
+	<creationDate>December 2013</creationDate>
+	<author>redCOMPONENT.com</author>
+	<authorEmail>email@redcomponent.com</authorEmail>
+	<authorUrl>www.redweb.dk</authorUrl>
+	<copyright>(c) Redweb.dk</copyright>
+	<license>GNU/GPL</license>
+	<version>2.5.6</version>
+	<description>COM_REDITEM_DESCRIPTION</description>
+	<scriptfile>install.php</scriptfile>
+	<redcore version="1.10.1" defaultFramework="bootstrap3" />
+	<install folder="component/admin">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.sql</file>
+			<file driver="mysql" charset="utf8">sql/install/mysql/data.sql</file>
+		</sql>
+	</install>
+	<uninstall folder="component/admin">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<update folder="component/admin">
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="component/site">
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>layouts</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>reditem.php</filename>
+		<filename>router.php</filename>
+	</files>
+
+	<languages folder="component/site/language">
+		<language tag="en-GB">en-GB/en-GB.com_reditem.ini</language>
+		<language tag="da-DK">da-DK/da-DK.com_reditem.ini</language>
+	</languages>
+
+	<!-- Medias -->
+	<media destination="com_reditem" folder="media/com_reditem">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>templates</folder>
+		<folder>translations</folder>
+		<file>demo.data.json</file>
+	</media>
+
+	<administration>
+		<menu img="../media/com_reditem/images/reditem16.png">COM_REDITEM</menu>
+		<files folder="component/admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>reditem.php</filename>
+		</files>
+		<languages folder="component/admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_reditem.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_reditem.sys.ini</language>
+			<language tag="da-DK">da-DK/da-DK.com_reditem.ini</language>
+			<language tag="da-DK">da-DK/da-DK.com_reditem.sys.ini</language>
+		</languages>
+	</administration>
+
+	<!-- Libraries to install with the component -->
+	<libraries>
+		<library name="reditem"/>
+	</libraries>
+
+	<!-- Plugins to install with the component -->
+	<plugins>
+		<plugin name="reditem_states" group="system" published="published" />
+		<plugin name="twig" group="system" published="published" />
+		<plugin name="user_behaviors" group="reditem" published="published" />
+		<plugin name="reditem" group="reditem_quickicon" published="published" />
+	</plugins>
+
+	<!-- Translations to install with the component -->
+	<translations>
+		<!-- redITEM Extensions Translation -->
+		<translation name="com_reditem"/>
+	</translations>
+
+	<!-- Webservices to install with the component -->
+	<webservices folder="media/com_reditem/webservices">
+		<folder>com_reditem</folder>
+	</webservices>
+</extension>

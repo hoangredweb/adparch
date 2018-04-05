@@ -1,0 +1,1 @@
+ALTER TABLE `#__reditem_mail` ADD `type_id` int(11) NOT NULL DEFAULT '0' AFTER `name`;

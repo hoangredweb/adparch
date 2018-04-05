@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_reditem">
+    <section name="component">
+        <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC"/>
+        <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC"/>
+        <action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC"/>
+        <action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC"/>
+        <action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC"/>
+        <action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC"/>
+        <action name="core.searchengine" title="COM_REDITEM_ACTION_USE_SEARCH_ENGINE"  description="COM_REDITEM_ACTION_USE_SEARCH_ENGINE_DESC" />
+        <action name="category.view" title="COM_REDITEM_ACTION_CATEGORY_VIEW" description="COM_REDITEM_ACTION_CATEGORY_VIEW_DESC" />
+        <action name="category.edit" title="COM_REDITEM_ACTION_CATEGORY_EDIT" description="COM_REDITEM_ACTION_CATEGORY_EDIT_DESC" />
+        <action name="category.edit.own" title="COM_REDITEM_ACTION_CATEGORY_EDIT_OWN" description="COM_REDITEM_ACTION_CATEGORY_EDIT_OWN_DESC" />
+        <action name="item.view" title="COM_REDITEM_ACTION_ITEM_VIEW" description="COM_REDITEM_ACTION_ITEM_VIEW_DESC" />
+        <action name="item.create" title="COM_REDITEM_ACTION_ITEM_CREATE" description="COM_REDITEM_ACTION_ITEM_CREATE_DESC" />
+        <action name="item.delete" title="COM_REDITEM_ACTION_ITEM_DELETE" description="COM_REDITEM_ACTION_ITEM_DELETE_DESC" />
+        <action name="item.edit" title="COM_REDITEM_ACTION_ITEM_EDIT" description="COM_REDITEM_ACTION_ITEM_EDIT_DESC" />
+        <action name="item.edit.own" title="COM_REDITEM_ACTION_ITEM_EDIT_OWN" description="COM_REDITEM_ACTION_ITEM_EDIT_OWN_DESC" />
+    </section>
+    <section name="type">
+        <action name="item.view" title="COM_REDITEM_ACTION_ITEM_VIEW" description="COM_REDITEM_ACTION_ITEM_VIEW_DESC" />
+        <action name="item.create" title="COM_REDITEM_ACTION_ITEM_CREATE" description="COM_REDITEM_ACTION_ITEM_CREATE_DESC" />
+        <action name="item.delete" title="COM_REDITEM_ACTION_ITEM_DELETE" description="COM_REDITEM_ACTION_ITEM_DELETE_DESC" />
+        <action name="item.edit" title="COM_REDITEM_ACTION_ITEM_EDIT" description="COM_REDITEM_ACTION_ITEM_EDIT_DESC" />
+        <action name="item.edit.own" title="COM_REDITEM_ACTION_ITEM_EDIT_OWN" description="COM_REDITEM_ACTION_ITEM_EDIT_OWN_DESC" />
+    </section>
+    <section name="category">
+        <action name="category.view" title="COM_REDITEM_ACTION_CATEGORY_VIEW" description="COM_REDITEM_ACTION_CATEGORY_VIEW_DESC" />
+        <action name="category.edit" title="COM_REDITEM_ACTION_CATEGORY_EDIT" description="COM_REDITEM_ACTION_CATEGORY_EDIT_DESC" />
+        <action name="category.edit.own" title="COM_REDITEM_ACTION_CATEGORY_EDIT_OWN" description="COM_REDITEM_ACTION_CATEGORY_EDIT_OWN_DESC" />
+    </section>
+    <section name="item">
+        <action name="item.view" title="COM_REDITEM_ACTION_ITEM_VIEW" description="COM_REDITEM_ACTION_ITEM_VIEW_DESC" />
+        <action name="item.delete" title="COM_REDITEM_ACTION_ITEM_DELETE" description="COM_REDITEM_ACTION_ITEM_DELETE_DESC" />
+        <action name="item.edit" title="COM_REDITEM_ACTION_ITEM_EDIT" description="COM_REDITEM_ACTION_ITEM_EDIT_DESC" />
+        <action name="item.edit.own" title="COM_REDITEM_ACTION_ITEM_EDIT_OWN" description="COM_REDITEM_ACTION_ITEM_EDIT_OWN_DESC" />
+    </section>
+</access>

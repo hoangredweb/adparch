@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="typeId"
+			type="ritypelist"
+			label="COM_REDITEM_FILTER_TYPES"
+			description="COM_REDITEM_FILTER_TYPES_DESCRIPTION"
+			onchange="this.form.submit();"
+		>
+			<option value="">COM_REDITEM_SELECT_FILTER_TYPES</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="items_limit"
+			type="rlimitbox"
+			class="inputbox input-mini chzn"
+			default="25"
+			label="JGLOBAL_ORDERING_LIST_LIMIT"
+			description="JGLOBAL_ORDERING_LIST_LIMIT_DESC"
+			onchange="submitLimit()" />
+	</fields>
+	<fields name="wizard">
+		<field
+			name="type"
+			type="ritypelist"
+			label="COM_REDITEM_ITEMS_WIZARD_TYPES">
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+			name="template"
+			type="rchildlist"
+			label="COM_REDITEM_ITEMS_WIZARD_TEMPLATE"
+			class="ch_type js-child-field"
+			parent_selector="#wizard_type"
+			parent_varname="id"
+			child_selector=".js-child-field"
+			url="{admin}/index.php?option=com_reditem&amp;task=item.ajaxGetEditTemplates" />
+	</fields>
+	<fields name="convert">
+		<field
+			name="type"
+			type="ritypelist"
+			label="COM_REDITEM_ITEMS_WIZARD_TYPES"
+			default="0">
+			<option value="0">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+			name="template"
+			type="rchildlist"
+			label="COM_REDITEM_ITEMS_WIZARD_TEMPLATE"
+			class="ch_type js-child-field-convert"
+			parent_selector="#convert_type"
+			parent_varname="id"
+			child_selector=".js-child-field-convert"
+			url="{admin}/index.php?option=com_reditem&amp;task=item.ajaxGetEditTemplates&amp;incDef=0" />
+		<field
+			name="categories"
+			type="rchildlist"
+			multiple="true"
+			label="COM_REDITEM_ITEMS_CONVERT_CATEGORIES"
+			class="ch_type js-child-field-categories"
+			parent_selector="#convert_type"
+			parent_varname="id"
+			child_selector=".js-child-field-categories"
+			url="{admin}/index.php?option=com_reditem&amp;task=item.ajaxGetEditCategories" />
+		<field
+			name="keeporg"
+			type="radio"
+			label="COM_REDITEM_ITEMS_CONVERT_KEEP_ORIGINAL"
+			class="btn-group"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fields>
+</form>

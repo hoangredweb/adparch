@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<extension type="package" version="1.6" method="install">
+	<name>redCOMPONENT template package</name>
+	<author>redCOMPONENT</author>
+	<creationDate>April 2016</creationDate>
+	<packagename>redcomponent</packagename>
+	<version>1.5.3.1</version>
+	<packager>redCOMPONENT</packager>
+	<files>
+		<file type="plugin" id="redcomponent" group="extension">plg_extension_redcomponent.zip</file>
+		<file type="template" id="redcomoponent" client="site">tpl_redcomoponent.zip</file>
+	</files>
+ </extension>

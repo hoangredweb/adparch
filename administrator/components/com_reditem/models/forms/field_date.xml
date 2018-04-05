@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params" addfieldpath="/libraries/redcore/form/fields">
+		<field
+			name="showTimePicker"
+			type="radio"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATE_SHOW_TIME_PICKER"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATE_SHOW_TIME_PICKER_DESC"
+			class="btn-group"
+			default="1">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+		<field
+			name="dateFormat"
+			type="text"
+			class="input-xlarge"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATE_FORMAT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATE_FORMAT_DESCRIPTION"
+			default="Y - m - d" />
+		<field
+			name="altFormat"
+			type="text"
+			class="input-xlarge"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATE_ALT_FORMAT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATE_ALT_FORMAT_DESCRIPTION"
+			default="yy-mm-dd" />
+		<field
+			name="disable_past"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATE_DISABLE_PAST"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATE_DISABLE_PAST_DESCRIPTION">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+		<field
+			name="enable_tooltip"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+		<field
+			name="tooltip"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP_DESC" />
+		<field
+			name="required"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED"
+			description="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED_DESCRIPTION"
+            default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+	</fields>
+</form>

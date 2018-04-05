@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/libraries/redcore/form/rules/">
+	<fieldset name="template-information">
+		<field name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+
+		<field name="title"
+			type="text"
+			class="input-xlarge"
+			default=""
+			label="COM_REDITEM_TYPE_NAME"
+			required="true"
+			description="COM_REDITEM_TYPE_NAME_DESCRIPTION"
+			message="COM_REDITEM_TYPE_NAME_DESCRIPTION"
+		/>
+
+		<field name="description"
+			type="editor"
+			default=""
+			label="COM_REDITEM_TYPE_DESCRIPTION"
+			description="COM_REDITEM_TYPE_DESCRIPTION_DESCRIPTION" />
+
+		<field name="table_name"
+			type="hidden"
+			default=""
+			class="readonly"
+			readonly="true"
+		/>
+
+	</fieldset>
+	<fieldset name="accesscontrol">
+		<field name="asset_id" type="hidden" filter="unset" />
+		<field
+		name="rules"
+		type="rules"
+		label="JFIELD_RULES_LABEL"
+		translate_label="false"
+		filter="rules"
+		validate="rules"
+		class="inputbox"
+		component="com_reditem"
+		section="type" />
+	</fieldset>
+	<fields name="params">
+		<field type="spacer" label="COM_REDITEM_TYPE_CONFIGURATION_GENERAL" />
+
+		<field name="thumbnailImageQuality"
+			type="text"
+			validate="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_GENERAL_THUMBNAIL_QUALITY"
+			description="COM_REDITEM_TYPE_CONFIGURATION_GENERAL_THUMBNAIL_QUALITY_DESCRIPTION"
+			default="90"
+			size="3"
+			maxlength="3" />
+
+		<field name="thumbnailCreateMethod"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_TYPE_CONFIGURATION_THUMBNAIL_CREATE_METHOD"
+			description="COM_REDITEM_TYPE_CONFIGURATION_THUMBNAIL_CREATE_METHOD_DESCRIPTION"
+			default="2">
+			<option value="1">COM_REDITEM_TYPE_CONFIGURATION_THUMBNAIL_CREATE_METHOD_OPTION_CROP_RESIZE</option>
+			<option value="2">COM_REDITEM_TYPE_CONFIGURATION_THUMBNAIL_CREATE_METHOD_OPTION_RESIZE</option>
+			<option value="0">COM_REDITEM_TYPE_CONFIGURATION_THUMBNAIL_CREATE_METHOD_OPTION_RESIZE_SCALE_FILL</option>
+		</field>
+
+		<field type="spacer" label="COM_REDITEM_TYPE_CONFIGURATION_ITEMS" />
+
+		<field name="item_gmap_field"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEM_GMAP_FIELD"
+			description="COM_REDITEM_TYPE_CONFIGURATION_ITEM_GMAP_FIELD_DESCRIPTION"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="default_itemdetail_template"
+			type="redtemplate"
+			label="COM_REDITEM_TYPE_CONFIGURATION_DEFAULT_ITEMDETAIL_TEMPLATE"
+			description="COM_REDITEM_TYPE_CONFIGURATION_DEFAULT_ITEMDETAIL_TEMPLATE_DESCRIPTION"
+			section="view_itemdetail" />
+
+        <field
+            name="default_itemedit_template"
+             type="redtemplate"
+             label="COM_REDITEM_TYPE_CONFIGURATION_DEFAULT_ITEMEDIT_TEMPLATE"
+             description="COM_REDITEM_TYPE_CONFIGURATION_DEFAULT_ITEMEDIT_TEMPLATE_DESCRIPTION"
+             section="view_itemedit" />
+
+		<field
+			name="itemTitleLimit"
+			type="text"
+			validate="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEM_TITLE_LIMIT_CHARACTTERS"
+			description="COM_REDITEM_TYPE_CONFIGURATION_ITEM_TITLE_LIMIT_CHARACTTERS_DESCRIPTION"
+			default="50" />
+	</fields>
+</form>

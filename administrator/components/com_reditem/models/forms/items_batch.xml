@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="batch-information">
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			>
+			<option value="">COM_REDITEM_KEEP_ORIGINAL_ACCESS_LEVEL</option>
+		</field>
+
+		<field
+			name="batchCategories"
+			type="ricategoriestree"
+			class="input-xlarge"
+			label="COM_REDITEM_ITEM_CATEGORY"
+			description="COM_REDITEM_ITEM_CATEGORY"
+			multiple="true"
+			>
+		</field>
+
+		<field name="copyMove"
+			type="radio"
+			label="COM_REDITEM_COPYMOVE_ITEMS_LABEL"
+			class="btn-group"
+			default="copy">
+			<option value="copy">COM_REDITEM_ITEMS_COPY</option>
+			<option value="move">COM_REDITEM_ITEMS_MOVE</option>
+		</field>
+		
+		<field name="removeOrigin"
+			type="radio"
+			label="COM_REDITEM_REMOVE_EXIST_CATEGORIES"
+			class="btn-group"
+			default="yes">
+			<option value="yes">COM_REDITEM_ITEMS_YES</option>
+			<option value="no">COM_REDITEM_ITEMS_NO</option>
+		</field>
+	</fieldset>
+</form>

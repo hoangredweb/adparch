@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<field
+			type="radio"
+			class="btn-group"
+			name="enable_limit_guide"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_LIMIT_GUIDE_LBL"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_LIMIT_GUIDE_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			type="text"
+			name="limit"
+			label="COM_REDITEM_FIELD_CONFIGURATION_LIMIT_LBL"
+			description="COM_REDITEM_FIELD_CONFIGURATION_LIMIT_DESC"
+			default="100"
+			validate="integer">
+		</field>
+
+		<field
+            name="enable_autosize"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_REDITEM_FIELD_CONFIGURATION_TEXTAREA_ENABLE_AUTOSIZE"
+			description="COM_REDITEM_FIELD_CONFIGURATION_TEXTAREA_ENABLE_AUTOSIZE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+
+		<field name="enable_tooltip"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+
+		<field name="tooltip"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP_DESC" />
+
+		<field name="required"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED"
+			description="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED_DESCRIPTION"
+            default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+
+		<field
+			name="includeInRSSContent"
+			type="radio"
+			label="COM_REDITEM_FIELD_CONFIGURATION_TEXTAREA_INCLUDE_IN_RSS_CONTENT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_TEXTAREA_INCLUDE_IN_RSS_CONTENT_DESCRIPTION"
+			default="0"
+			class="btn-group">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fields>
+</form>

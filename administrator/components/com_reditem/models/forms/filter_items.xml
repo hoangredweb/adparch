@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_REDCORE_FILTER_SEARCH_DESC"
+			placeholder="JSEARCH_FILTER"
+			class="js-enter-submits" />
+		<field
+			name="filter_types"
+			type="ritypelist"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_FILTER_TYPES"
+			description="COM_REDITEM_FILTER_TYPES_DESCRIPTION">
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+				<field
+				name="filter_time_from"
+				type="calendar"
+				label="Select a date"
+				class="input-small"
+				showtime="false" todaybutton="false" filltable="false" translateformat="true" />
+		<field
+				name="filter_time_to"
+				type="calendar"
+				label="Select a date"
+				class="input-small"
+				showtime="false" todaybutton="false" filltable="false" translateformat="true" />
+		<field
+			name="published"
+			type="rpublished"
+			statuses="0,1,2,-2"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_FILTER_PUBLISHED">
+			<option value="">COM_REDITEM_FILTER_PUBLISHED</option>
+		</field>
+		<!--<field
+			name="featured"
+			type="list"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_FILTER_FEATURED">
+			<option value="">COM_REDITEM_FILTER_FEATURED_SELECT</option>
+			<option value="0">COM_REDITEM_FILTER_FEATURED_OPTION_NOT</option>
+			<option value="1">COM_REDITEM_FILTER_FEATURED_OPTION_ONLY</option>
+		</field>
+		<field
+			name="catid"
+			type="ricategoriestree"
+			onchange="this.form.submit();">
+			<option value="">COM_REDITEM_ITEMS_FILTER_CATEGORY_SELECT</option>
+		</field>
+		<field
+			name="block"
+			type="list"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_ITEMS_FILTER_BLOCKED"
+			default="">
+			<option value="">COM_REDITEM_ITEMS_FILTER_BLOCKED_SELECT</option>
+			<option value="all">COM_REDITEM_ITEMS_FILTER_BLOCKED_OPTION_SHOW_ALL</option>
+			<option value="1">COM_REDITEM_ITEMS_FILTER_BLOCKED_OPTION_BLOCKED</option>
+		</field>-->
+		<field
+			name="created_user"
+			type="RIAuthor"
+			onchange="this.form.submit();">
+			<option value="">COM_REDITEM_ITEMS_FILTER_USER_SELECT</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="items_limit"
+			type="rlimitbox"
+			class="inputbox input-mini chzn"
+			default="25"
+			label="JGLOBAL_ORDERING_LIST_LIMIT"
+			description="JGLOBAL_ORDERING_LIST_LIMIT_DESC"
+			onchange="this.form.submit();" />
+	</fields>
+	<fields name="csv">
+		<field
+			name="import"
+			type="file"
+			label="COM_REDITEM_ITEMS_CSV_IMPORT_LABEL"
+			description="COM_REDITEM_ITEMS_CSV_IMPORT_DESC"
+			accept="text/csv"/>
+		<field
+			name="delimiter"
+			type="list"
+			default=","
+			label="COM_REDITEM_ITEMS_CSV_DELIMITER_LABEL"
+			description="COM_REDITEM_ITEMS_CSV_DELIMITER_DESC">
+			<option value=",">COM_REDITEM_ITEMS_CSV_DELIMITER_COMMA</option>
+			<option value=";">COM_REDITEM_ITEMS_CSV_DELIMITER_SEMICOLON</option>
+			<option value="|">COM_REDITEM_ITEMS_CSV_DELIMITER_BAR</option>
+			<option value=" ">COM_REDITEM_ITEMS_CSV_DELIMITER_SPACE</option>
+		</field>
+	</fields>
+	<fields name="wizard">
+		<field
+			name="type"
+			type="ritypelist"
+			label="COM_REDITEM_ITEMS_WIZARD_TYPES">
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+		    name="template"
+		    type="rchildlist"
+		    label="COM_REDITEM_ITEMS_WIZARD_TEMPLATE"
+		    class="ch_type js-child-field"
+		    parent_selector="#wizard_type"
+		    parent_varname="id"
+		    child_selector=".js-child-field"
+		    url="{admin}/index.php?option=com_reditem&amp;task=item.ajaxGetEditTemplates" />
+	</fields>
+</form>

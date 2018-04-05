@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="template-information">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true" />
+		<field
+			name="type_id"
+			type="ritypelist"
+			label="COM_REDITEM_TEMPLATE_TYPE"
+			required="true"
+			description="COM_REDITEM_TEMPLATE_TYPE_DESC">
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+			name="name"
+			type="text"
+			default=""
+			label="COM_REDITEM_TEMPLATE_NAME"
+			required="true"
+			class="input-normal"
+			description="COM_REDITEM_TEMPLATE_NAME_DESCRIPTION"
+			message="COM_REDITEM_TEMPLATE_NAME_DESCRIPTION" />
+		<field
+			name="description"
+			type="text"
+			class="input-normal"
+			label="COM_REDITEM_TEMPLATE_DESCRIPTION"
+			description="COM_REDITEM_TEMPLATE_DESCRIPTION_DESCRIPTION" />
+		<field
+			name="typecode"
+			type="ritemplatesections"
+			class="chosen"
+			label="COM_REDITEM_TEMPLATE_FOR"
+			description="COM_REDITEM_TEMPLATE_FOR_DESCRIPTION"
+			default="view_itemdetail"
+			required="true"
+			onchange="redITEMtemplateChange(this);">
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+			name="content"
+			type="editor"
+			editor="codemirror|tinymce"
+			default=""
+			label="COM_REDITEM_TEMPLATE_CONTENT"
+			description="COM_REDITEM_TEMPLATE_CONTENT_DESCRIPTION"
+			cols="80"
+			filter="JComponentHelper::filterText"
+			buttons="true" />
+		<field
+			name="published"
+			type="radio"
+			label="JPUBLISHED"
+			class="btn-group"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

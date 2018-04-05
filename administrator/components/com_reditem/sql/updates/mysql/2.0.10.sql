@@ -1,0 +1,1 @@
+ALTER TABLE `#__reditem_category_related` ADD INDEX(`related_id`);

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset name="global" label="COM_REDITEM_GLOBAL_CONFIGURATION">
+
+		<field name="seo_title_config"
+			label="COM_REDITEM_CONFIGURATION_SEO_TITLE_CONFIG"
+			description="COM_REDITEM_CONFIGURATION_SEO_TITLE_CONFIG_DESCRIPTION"
+			type="list"
+			class="btn-group"
+			default="">
+			<option value="">COM_REDITEM_CONFIGURATION_SEO_CONFIG_OPTION_NOT_USE</option>
+			<option value="append">COM_REDITEM_CONFIGURATION_SEO_CONFIG_OPTION_APPEND</option>
+			<option value="prepend">COM_REDITEM_CONFIGURATION_SEO_CONFIG_OPTION_PREPEND</option>
+			<option value="replace">COM_REDITEM_CONFIGURATION_SEO_CONFIG_OPTION_REPLACE</option>
+		</field>
+
+		<field name="googleApiKey"
+			label="COM_REDITEM_CONFIGURATION_GOOGLE_API_KEY"
+			description="COM_REDITEM_CONFIGURATION_GOOGLE_API_KEY_DESCRIPTION"
+			type="text" />
+
+		<field name="cron_token"
+			class="form-control"
+			type="text"
+			label="COM_REDITEM_CONFIGURATION_AUTOMATIC_SYSTEM_CRON_TOKEN"
+			description="COM_REDITEM_CONFIGURATION_AUTOMATIC_SYSTEM_CRON_TOKEN_DESCRIPTION" />
+
+		<field name="generate_holder_category_image"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_CATEGORY_GENERATE_HOLDER_IMAGE"
+			description="COM_REDITEM_CONFIGURATION_CATEGORY_GENERATE_HOLDER_IMAGE_DESCRIPTION"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field type="spacer"
+			class="text-danger btn-block input-lg"
+			label="COM_REDITEM_GLOBAL_CONFIGURATION_CATEGORY_FEEDS" />
+
+		<field name="categoryFeedLimit"
+			type="number"
+			validate="integer"
+			label="COM_REDITEM_CONFIGURATION_CATEGORY_FEED_LIMIT"
+			description="COM_REDITEM_CONFIGURATION_CATEGORY_FEED_LIMIT_DESC"
+			default="5" />
+
+		<field name="categoryFeedIncludeSub"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_CATEGORY_FEED_INCLUDE_ITEMS_IN_SUB_CATEGORIES"
+			description="COM_REDITEM_CONFIGURATION_CATEGORY_FEED_INCLUDE_ITEMS_IN_SUB_CATEGORIES_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<!-- Versioning feature configuration -->
+		<field type="spacer"
+			label="COM_REDITEM_CONFIGURATION_VERSIONING_FEATURE"
+			class="text-danger btn-block input-lg" />
+
+		<field name="save_history"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="JGLOBAL_SAVE_HISTORY_OPTIONS_LABEL"
+			description="JGLOBAL_SAVE_HISTORY_OPTIONS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="history_limit"
+			type="number"
+			validate="integer"
+			label="JGLOBAL_HISTORY_LIMIT_OPTIONS_LABEL"
+			description="JGLOBAL_HISTORY_LIMIT_OPTIONS_DESC"
+			default="5" />
+
+		<!-- AddThis share feature configuration -->
+		<field type="spacer"
+			label="COM_REDITEM_CONFIGURATION_SHARE_ADDTHIS"
+			class="text-danger btn-block input-lg" />
+
+		<field name="addThisFBLike"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_FACEBOOK_LIKE"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_FACEBOOK_LIKE_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisFBShare"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_FACEBOOK_SHARE"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_FACEBOOK_SHARE_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisGooglePlus"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_GOOGLEPLUS"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_GOOGLEPLUS_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisEmail"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_EMAIL"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_EMAIL_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisTweetIt"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_TWEET_IT"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_TWEET_IT_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisLinkedIn"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_LINKEDIN"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_LINKEDIN_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisPinterest"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_PINTEREST"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_PINTEREST_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+		<field name="addThisMore"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_CONFIGURATION_ADDTHIS_MORE_SERVICES"
+			description="COM_REDITEM_CONFIGURATION_ADDTHIS_MORE_SERVICES_DESC"
+			default="1">
+			<option value="1">JON</option>
+			<option value="0">JOFF</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset name="customfields" label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_UPLOAD">
+
+		<field type="spacer"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE"
+			class="text-danger btn-block input-lg" />
+
+		<field name="customfieldFileUploadMaxSize"
+			type="number"
+			validate="integer"
+			default="2"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_MAX_SIZE"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_MAX_SIZE_DESC" />
+
+		<field name="customfieldFileUploadExtensions"
+			type="text"
+			default="zip,doc,xls,pdf"
+			class="form-control"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_ALLOWED_EXTENSIONS"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_ALLOWED_EXTENSIONS_DESC" />
+
+		<field name="customfieldFileUploadMimes"
+			type="text"
+			class="form-control"
+			default="application/zip,application/doc,application/xls,application/pdf"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_ALLOWED_MIMES"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_ALLOWED_MIMES_DESC" />
+
+		<field name="customfieldFileUploadUseCustomName"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_USE_CUSTOM_FILENAME"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_FILE_UPLOAD_USE_CUSTOM_FILENAME_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field type="spacer"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE"
+			class="text-danger btn-block input-lg" />
+
+		<field name="customfieldImageUploadMaxSize"
+			type="number"
+			validate="integer"
+			default="2"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE_UPLOAD_MAX_SIZE"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE_UPLOAD_MAX_SIZE_DESC" />
+
+		<field name="customfieldImageUploadExtensions"
+			type="text"
+			default="jpg,jpeg,gif,png"
+			class="form-control"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE_UPLOAD_ALLOWED_EXTENSIONS"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE_UPLOAD_ALLOWED_EXTENSIONS_DESC" />
+
+		<field name="customfieldImageUploadMimes"
+			type="text"
+			class="form-control"
+			default="image/jpg,image/jpeg,image/gif,image/png"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE_UPLOAD_ALLOWED_MIMES"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_IMAGE_UPLOAD_ALLOWED_MIMES_DESC" />
+
+		<field type="spacer"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY"
+			class="text-danger btn-block input-lg" />
+
+		<field name="customfieldGalleryUploadMaxSize"
+			type="number"
+			validate="integer"
+			default="2"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY_UPLOAD_MAX_SIZE"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY_UPLOAD_MAX_SIZE_DESC" />
+
+		<field name="customfieldGalleryUploadExtensions"
+			type="text"
+			default="jpg,jpeg,gif,png"
+			class="form-control"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY_UPLOAD_ALLOWED_EXTENSIONS"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY_UPLOAD_ALLOWED_EXTENSIONS_DESC" />
+
+		<field name="customfieldGalleryUploadMimes"
+			type="text"
+			class="form-control"
+			default="image/jpg,image/jpeg,image/gif,image/png"
+			label="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY_UPLOAD_ALLOWED_MIMES"
+			description="COM_REDITEM_CONFIGURATION_CUSTOMFIELDS_GALLERY_UPLOAD_ALLOWED_MIMES_DESC" />
+
+	</fieldset>
+
+	<fieldset name="categories" label="COM_REDITEM_CATEGORY_CATEGORIES">
+
+		<field
+				name="default_category_image_large_width"
+				type="text"
+				filter="integer"
+				label="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_LARGE_WIDTH"
+				description="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_LARGE_WIDTH_DESCRIPTION"
+				default="600"
+				class="form-control" />
+
+		<field
+				name="default_category_image_large_height"
+				type="text"
+				filter="integer"
+				label="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_LARGE_HEIGHT"
+				description="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_LARGE_HEIGHT_DESCRIPTION"
+				default="600"
+				class="form-control" />
+
+		<field
+				name="default_category_image_medium_width"
+				type="text"
+				filter="integer"
+				label="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_MEDIUM_WIDTH"
+				description="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_MEDIUM_WIDTH_DESCRIPTION"
+				default="300"
+				class="form-control" />
+
+		<field
+				name="default_category_image_medium_height"
+				type="text"
+				filter="integer"
+				label="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_MEDIUM_HEIGHT"
+				description="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_MEDIUM_HEIGHT_DESCRIPTION"
+				default="300"
+				class="form-control" />
+
+		<field
+				name="default_category_image_small_width"
+				type="text"
+				filter="integer"
+				label="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_SMALL_WIDTH"
+				description="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_SMALL_WIDTH_DESCRIPTION"
+				default="150"
+				class="form-control" />
+
+		<field
+				name="default_category_image_small_height"
+				type="text"
+				filter="integer"
+				label="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_SMALL_HEIGHT"
+				description="COM_REDITEM_CONFIGURATION_CATEGORY_IMAGE_SMALL_HEIGHT_DESCRIPTION"
+				default="150"
+				class="form-control" />
+	</fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_reditem"
+			section="component" />
+	</fieldset>
+</config>

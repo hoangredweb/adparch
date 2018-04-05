@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <field name="multiple"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="COM_REDITEM_FIELD_CONFIGURATION_MULTIPLE"
+            description="COM_REDITEM_FIELD_CONFIGURATION_MULTIPLE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="includeCurrentUser"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="COM_REDITEM_FIELD_CONFIGURATION_USER_INCLUDE_CURRENT_USER"
+            description="COM_REDITEM_FIELD_CONFIGURATION_USER_INCLUDE_CURRENT_USER_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="enable_tooltip"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP"
+            description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="tooltip"
+            type="text"
+            label="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP"
+            description="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP_DESC" />
+        <field name="required"
+            type="radio"
+            class="btn-group"
+            label="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED"
+            description="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED_DESCRIPTION"
+            default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	    <field name="blocked"
+            type="radio"
+            class="btn-group"
+            label="COM_REDITEM_FIELD_CONFIGURATION_INCLUDE_BLOCKED"
+            description="COM_REDITEM_FIELD_CONFIGURATION_INCLUDE_BLOCKED_DESCRIPTION"
+            default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+	    </field>
+        <field
+            name="includeInRSSContent"
+            type="radio"
+            label="COM_REDITEM_FIELD_CONFIGURATION_TEXT_INCLUDE_IN_RSS_CONTENT"
+            description="COM_REDITEM_FIELD_CONFIGURATION_TEXT_INCLUDE_IN_RSS_CONTENT_DESCRIPTION"
+            default="0"
+            class="btn-group">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+            name="usergroups"
+            type="usergroup"
+            multiple="true"
+            label="COM_REDITEM_FIELD_CONFIGURAITON_USERGROUPS"
+            description="COM_REDITEM_FIELD_CONFIGURATION_USERGROUPS_DESC" />
+    </fields>
+</form>

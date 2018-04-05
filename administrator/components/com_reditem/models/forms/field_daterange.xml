@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<field name="format"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_FORMAT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_FORMAT_DESC"
+			default="DD/MM/YYYY HH:mm:ss"
+			/>
+		<field name="showPreset"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_SHOW_PRESET"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_SHOW_PRESET_DESC"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="minDate"
+			type="Rdatepicker"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_MIN_DATE"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_MIN_DATE_DESC"
+			/>
+		<field name="maxDate"
+			type="Rdatepicker"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_MAX_DATE"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_MAX_DATE_DESC"
+			/>
+		<field name="dateLimit"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_DATE_LIMIT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_DATE_LIMIT_DESC"
+			/>
+		<field name="showDropdowns"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_SHOW_DROPDOWNS"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_SHOW_DROPDOWNS_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="showWeekNumbers"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_SHOW_WEEKNUMBERS"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_SHOW_WEEKNUMBERS_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="timePicker"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="timePickerIncrement"
+			type="number"
+			validate="integer"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_INCREMENT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_INCREMENT_DESC"
+			default="10"
+			/>
+		<field name="timePicker12HourFormat"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_HOUR_FORMAT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_HOUR_FORMAT_DESC"
+			default="1">
+			<option value="1">12 Hour (AM/PM)</option>
+			<option value="0">24 Hour</option>
+		</field>
+		<field name="timePickerSeconds"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_SECONDS"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATERANGE_TIME_PICKER_SECONDS_DESC"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="enable_tooltip"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP_DESC"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="tooltip"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP_DESC"
+			/>
+		<field name="required"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED"
+			description="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED_DESCRIPTION"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fields>
+</form>

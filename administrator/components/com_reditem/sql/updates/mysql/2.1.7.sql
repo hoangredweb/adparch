@@ -1,0 +1,1 @@
+ALTER TABLE `#__reditem_mail` DROP `name`;

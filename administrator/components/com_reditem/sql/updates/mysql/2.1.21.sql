@@ -1,0 +1,1 @@
+ALTER TABLE `#__reditem_fields` ADD `default` MEDIUMTEXT NOT NULL DEFAULT '' AFTER `type`;

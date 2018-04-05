@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <field
+                name="upload_max_filesize"
+                type="text"
+                label="COM_REDITEM_FIELD_CONFIGURATION_FILE_UPLOAD_MAX_FILESIZE"
+                description="COM_REDITEM_FIELD_CONFIGURATION_FILE_UPLOAD_MAX_FILESIZE_DESCRIPTION"
+                validate="integer"
+                default="2"
+                />
+        <field
+                name="allowed_file_extension"
+                type="text"
+                label="COM_REDITEM_FIELD_CONFIGURATION_FILE_ALLOWED_FILE_EXTENSIONS"
+                description="COM_REDITEM_FIELD_CONFIGURATION_FILE_ALLOWED_FILE_EXTENSIONS_DESCRIPTION"
+                default="zip,doc,xls,pdf"
+                />
+        <field
+                name="use_mangled_name"
+                type="radio"
+                class="btn-group"
+                label="COM_REDITEM_FIELD_CONFIGURATION_FILE_USE_MANGLED_NAME"
+                description="COM_REDITEM_FIELD_CONFIGURATION_FILE_USE_MANGLED_NAME_DESCRIPTION"
+                default="1">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+                name="wipe_on_upload"
+                type="radio"
+                class="btn-group"
+                label="COM_REDITEM_FIELD_CONFIGURATION_WIPE_ON_UPLOAD"
+                description="COM_REDITEM_FIELD_CONFIGURATION_WIPE_ON_UPLOAD_DESCRIPTION"
+                default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+                name="allow_override"
+                type="radio"
+                class="btn-group"
+                label="COM_REDITEM_FIELD_CONFIGURATION_ALLOW_OVERRIDE"
+                description="COM_REDITEM_FIELD_CONFIGURATION_ALLOW_OVERRIDE_DESC"
+                default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+                name="preview"
+                type="radio"
+                class="btn-group"
+                label="COM_REDITEM_FIELD_CONFIGURATION_FILE_PREVIEW"
+                description="COM_REDITEM_FIELD_CONFIGURATION_FILE_PREVIEW_DESCRIPTION"
+                default="1">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+                name="enable_tooltip"
+                type="radio"
+                class="btn-group"
+                default="1"
+                label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP"
+                description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field
+                name="tooltip"
+                type="text"
+                label="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP"
+                description="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP_DESC"
+                />
+        <field
+                name="required"
+                type="radio"
+                class="btn-group"
+                label="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED"
+                description="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED_DESCRIPTION"
+                default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fields>
+</form>

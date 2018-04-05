@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<field
+			name="upload_max_filesize"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_IMAGE_UPLOAD_MAX_FILESIZE"
+			description="COM_REDITEM_FIELD_CONFIGURATION_IMAGE_UPLOAD_MAX_FILESIZE_DESCRIPTION"
+			validate="integer"
+			default="2" />
+		<field
+			name="allowed_file_extension"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_IMAGE_ALLOWED_FILE_EXTENSIONS"
+			description="COM_REDITEM_FIELD_CONFIGURATION_IMAGE_ALLOWED_FILE_EXTENSIONS_DESCRIPTION"
+			default="jpg,jpeg,gif,png" />
+		<field
+			name="preview_image_width"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGRURATION_PREVIEW_IMAGE_WIDTH"
+			description="COM_REDITEM_FIELD_CONFIGRURATION_PREVIEW_IMAGE_WIDTH_DESC"
+			default="300" />
+		<field
+			name="preview_image_height"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGRURATION_PREVIEW_IMAGE_HEIGHT"
+			description="COM_REDITEM_FIELD_CONFIGRURATION_PREVIEW_IMAGE_HEIGHT_DESC"
+			default="300" />
+		<field
+			name="allow_override"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ALLOW_OVERRIDE"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ALLOW_OVERRIDE_DESC"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="use_mangled_name"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_FILE_USE_MANGLED_NAME"
+			description="COM_REDITEM_FIELD_CONFIGURATION_FILE_USE_MANGLED_NAME_DESCRIPTION"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="enable_cropping_image"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_CROPPING_IMAGE"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_CROPPING_IMAGE_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="crop_keep_ratio"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_GALLERY_CROP_IMAGE_KEEP_RATIO"
+			description="COM_REDITEM_FIELD_CONFIGURATION_GALLERY_CROP_IMAGE_KEEP_RATIO_DESC"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="enable_tooltip"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_ENABLE_TOOLTIP_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+		<field name="tooltip"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP"
+			description="COM_REDITEM_FIELD_CONFIGURATION_TOOLTIP_DESC" />
+		<field name="required"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED"
+			description="COM_REDITEM_FIELD_CONFIGURATION_REQUIRED_DESCRIPTION"
+			default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+		</field>
+	</fields>
+</form>

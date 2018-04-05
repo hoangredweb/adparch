@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="category-information">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true" />
+		<field
+			name="title"
+			type="text"
+			default=""
+			label="COM_REDITEM_CATEGORY_NAME"
+			required="true"
+			class="input-normal"
+			description="COM_REDITEM_CATEGORY_NAME_DESCRIPTION"
+			message="COM_REDITEM_CATEGORY_ITEM_MUST_HAVE_A_NAME" />
+		<field
+			name="alias"
+			type="text"
+			default=""
+			label="COM_REDITEM_CATEGORY_ALIAS"
+			description="COM_REDITEM_CATEGORY_ALIAS_DESC" />
+		<field
+			name="parent_id"
+			type="ricategoriestree"
+			label="COM_REDITEM_CATEGORY_PARENT_CATEGORY"
+			description="COM_REDITEM_CATEGORY_PARENT_CATEGORY_DESCRIPTION"
+			default="1">
+			<option value="1">COM_REDITEM_TOPLEVEL</option>
+		</field>
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			class="inputbox"
+			size="1" />
+		<field
+			name="template_id"
+			type="redtemplate"
+			section="view_categorydetail"
+			label="COM_REDITEM_ITEM_TEMPLATE"
+			description="COM_REDITEM_ITEM_TEMPLATE_DESCRIPTION"
+			required="true">
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+			name="fields_template_id"
+			type="redtemplate"
+			class="chosen"
+			section="view_categorydetail"
+			onchange="submitform('category.setFieldsEditTemplate');"
+			label="COM_REDITEM_ITEM_TEMPLATE_FIELDS_LIST"
+			description="COM_REDITEM_ITEM_TEMPLATE_FIELDS_LIST_DESC">
+			<option value="0">COM_REDITEM_TEMPLATE_DEFAULT</option>
+		</field>
+		<field
+			name="category_image"
+			type="text"
+			description="COM_REDITEM_CATEGORY_IMAGE_DESCRIPTION"
+			label="COM_REDITEM_CATEGORY_IMAGE"
+			default="" />
+		<field
+			name="category_image_media"
+			type="hidden"
+			default="" />
+		<field name="featured" type="radio"
+			label="JFEATURED"
+			class="btn-group"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="published"
+ 			type="radio"
+			label="JPUBLISHED"
+			class="btn-group"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		<field
+			name="publish_up"
+			type="calendar"
+			label="COM_REDITEM_CATEGORY_PUBLISH_UP"
+			description="COM_REDITEM_CATEGORY_PUBLISH_UP_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc" />
+		<field
+			name="publish_down"
+			type="calendar"
+			label="COM_REDITEM_CATEGORY_PUBLISH_DOWN"
+			description="COM_REDITEM_CATEGORY_PUBLISH_DOWN_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc" />
+		<field
+			name="introtext"
+			type="editor"
+			default=""
+			label="COM_REDITEM_CATEGORY_INTROTEXT"
+			description="COM_REDITEM_CATEGORY_INTROTEXT_DESCRIPTION"
+			cols="80"
+			filter="JComponentHelper::filterText"
+			buttons="true" />
+		<field
+			name="fulltext"
+			type="editor"
+			default=""
+			label="COM_REDITEM_CATEGORY_FULLTEXT"
+			description="COM_REDITEM_CATEGORY_FULLTEXT_DESCRIPTION"
+			cols="80"
+			filter="JComponentHelper::filterText"
+			buttons="true" />
+		<field
+			name="created_user_id"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			desc="JGLOBAL_FIELD_CREATED_BY_DESC" />
+		<field
+			name="created_time"
+			type="text"
+			label="JGLOBAL_CREATED_DATE"
+			class="readonly"
+			filter="unset"
+			readonly="true" />
+		<field
+			name="modified_user_id"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"/>
+		<field
+			name="modified_time"
+			type="text"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			class="readonly"
+			filter="unset"
+			readonly="true" />
+		<field
+			name="related_categories"
+			type="ricategoriestree"
+			label="COM_REDITEM_CATEGORY_RELATED_CATEGORY"
+			description="COM_REDITEM_CATEGORY_RELATED_CATEGORY_DESCRIPTION"
+			multiple="true">
+		</field>
+		<field
+			name="fields"
+			type="hidden" />
+	</fieldset>
+	<fields name="params">
+		<field
+			name="category_item_unpublish_after_user_deactivated"
+			type="radio"
+			label="COM_REDITEM_CATEGORY_ITEM_UNPUBLISH_AFTER_USER_DEACTIVATED"
+			description="COM_REDITEM_CATEGORY_ITEM_UNPUBLISH_AFTER_USER_DEACTIVATED_DESCRIPTION"
+			class="btn-group"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="category_item_unpublish_after_user_deleted"
+			type="radio"
+			label="COM_REDITEM_CATEGORY_ITEM_UNPUBLISH_AFTER_USER_DELETED"
+			description="COM_REDITEM_CATEGORY_ITEM_UNPUBLISH_AFTER_USER_DELETED_DESCRIPTION"
+			class="btn-group"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="categoryLatLng"
+			type="text"
+			class="input-xlarge"
+			label="COM_REDITEM_CATEGORY_LATITUDE_AND_LONGTITUDE_NUMBER"
+			description="COM_REDITEM_CATEGORY_LATITUDE_AND_LONGTITUDE_NUMBER_DESCRIPTION" />
+		<field
+			name="category_image_title"
+			type="rtext"
+			label="COM_REDITEM_CATEGORY_IMAGE_TITLE"
+			placeholder="COM_REDITEM_CATEGORY_IMAGE_TITLE"
+			default="" />
+		<field
+			name="category_image_alt"
+			type="rtext"
+			label="COM_REDITEM_CATEGORY_IMAGE_ALT"
+			placeholder="COM_REDITEM_CATEGORY_IMAGE_ALT"
+			default="" />
+		<field
+			name="meta_description"
+			label="COM_REDITEM_CATEGORY_META_DESCRIPTION"
+			type="textarea" />
+		<field
+			name="meta_keywords"
+			label="COM_REDITEM_CATEGORY_META_KEYWORDS"
+			type="textarea" />
+		<field
+			name="meta_robots"
+			label="COM_REDITEM_CATEGORY_META_ROBOTS"
+			type="list"
+			default="">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+			<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+			<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+			<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+		</field>
+	</fields>
+	<fieldset name="accesscontrol">
+		<field
+ 			name="asset_id"
+			type="hidden"
+			filter="unset" />
+		<field
+			name="rules"
+			type="rules"
+			label="JFIELD_RULES_LABEL"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_reditem"
+			section="category" />
+	</fieldset>
+</form>

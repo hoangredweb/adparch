@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `#__reditem_item_keyword_xref`, `#__reditem_keywords`;
